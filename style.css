@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Prosto+One&family=Roboto:ital,wght@1,300;1,700&display=swap');
 
+html {
+    scroll-behavior: smooth !important;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,18 +12,12 @@
     font-size: 30px;
     color: white;
     text-decoration: none;
-    background-color: black !important;;
+    background-color: black;
 }
 section {
     height: 100vh;
     scroll-snap-align: start;
-}
-
-#sec-one {
-    background-color: orange;
-}
-#sec-two {
-    background-color: darkorchid;
+    position: relative;
 }
 
 .container {
@@ -84,30 +82,33 @@ section {
     width: 100%;
 }
 #t1-more:hover {
-    cursor: pointer;
+    cursor:grab;
+}
+#heading-2 {
+    padding-top: 5rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
 }
 #t2-skillset {
-    padding-top: 15%;
-    margin-left: 20%;
     color: cornflowerblue;
-    display: inline-block;
     text-decoration:solid;
     font-size: 1rem;
     font-weight: 700;
 }
 #t2-dev {
-    display: inline-block;
-    margin-left: 10rem;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
 }
 #t2-why {
     display: inline-block;
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 10%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5rem;
     color: grey;
     font-size: 0.8rem;
+    text-align: center;
 }
 #t3-cme {
     margin-left: auto;
@@ -133,6 +134,25 @@ section {
     font-size: 0.8rem;
     color: cornflowerblue;
     font-family: 'Poppins', sans-serif;
+}
+.footer {
+    background-color: rgb(18, 18, 18);
+}
+#footer {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;;
+}
+
+#footer-madeby {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(40, 40, 40);
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 @keyframes ub-load {
     0% {
