@@ -130,7 +130,7 @@ section {
     font-weight: 700;
     font-size: 0.8rem;
 }
-#discord {
+#discord, #email {
     font-size: 0.8rem;
     color: cornflowerblue;
     font-family: 'Poppins', sans-serif;
